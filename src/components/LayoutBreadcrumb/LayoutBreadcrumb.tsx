@@ -1,9 +1,4 @@
 /**
- * Author: neiluoluo nie.luoluo@99cloud.net
- * Date: 2022-07-22 16:16:51
- * @LastEditors: neiluoluo
- * @LastEditTime: 2023-05-17 15:44:21
- * Description: 公用面包屑
  *
  */
 import {getNewRouterList} from '@src/routers/routerLists';

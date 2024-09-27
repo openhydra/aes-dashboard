@@ -1,4 +1,4 @@
-REGISTRY ?= hub.sh.99cloud.net
+REGISTRY ?= registry.cn-shanghai.aliyuncs.com
 TAG ?=
 
 IMAGETAG ?= $(shell git rev-parse --abbrev-ref HEAD)-$(shell git rev-parse --verify HEAD)-$(shell date -u '+%Y%m%d%I%M%S')
