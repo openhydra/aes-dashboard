@@ -1,0 +1,211 @@
+.header {
+  padding: 0 44px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px !important;
+  background: #DEE4F5 !important;
+  box-shadow: 0px 8px 28px 0px rgba(72, 89, 102, 0.10);
+  z-index: 1;
+
+  .headerLeft {
+    .logo {
+      height: 56px;
+      line-height: 1.5;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 30px;
+        margin-right: 36px;
+        margin-left: 28px;
+      }
+      span {
+        color: #AEA3FF;
+        font-family: MiSans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .headerRight {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    //justify-content:  space-between;
+    justify-content:  flex-end;
+    align-items: center;
+    > li {
+      margin: 0 20px;
+      cursor: pointer;
+      height: 56px;
+      align-items: center;
+      display: flex;
+      div {
+        display: flex;
+        height: 56px;
+        align-items: center;
+      }
+      .language {
+        font-size: 14px;
+        color: #ffffff;
+        margin-left: 5px;
+      }
+      ul {
+        overflow: hidden;
+        li {
+          padding: 0 !important;
+        }
+      }
+
+    }
+    :global {
+      .ant-menu-light{
+        background: transparent !important;
+      }
+
+    }
+  }
+
+}
+/*所有服务-菜单样式*/
+.allService {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 0 28px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  height: 80px;
+  background: #F3F5FB;
+  position: relative;
+  span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #878789;
+  }
+  .collapsed{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    right: -18px;
+    position: absolute;
+    z-index: 9999;
+    &:hover{
+      transition: 0.3s;
+      transform: scale(1.2);
+    }
+  }
+}
+.centerAllService {
+  justify-content: center !important;
+}
+
+
+:global {
+  .ant-layout-sider-light{
+    background: #F3F5FB !important;
+    box-shadow: -1px 0px 0px 0px #F0F0F0 inset !important;
+  }
+  .ant-menu-light{
+    background: #F3F5FB !important;
+  }
+  .ant-menu-item svg, .ant-menu-submenu-title svg{
+    font-size: 18px !important;
+  }
+  .ant-menu-title-content{
+    color: #5B5B5B;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    width: 100%;
+    height: 100%;
+  }
+  .ant-menu-title-content div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title{
+    color: #5B46F6 !important;
+  }
+  .ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title .ant-menu-title-content,
+  .ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title svg path{
+    color: #5B46F6 !important;
+    fill: #5B46F6 !important;
+  }
+  .ant-menu-item-selected{
+    border-radius: 12px !important;
+    background: #5B46F6 !important;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 22px;
+    color: #ffffff !important;
+  }
+  .ant-menu-item-selected svg path{
+    fill: #ffffff;
+  }
+  .ant-menu-item-selected .ant-menu-title-content{
+    color: #ffffff;
+  }
+  .ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline{
+    background: none;
+  }
+  .ant-layout-sider-trigger{
+    height: 80px !important;
+    display: flex;
+    justify-content: center;
+    background: #EEF1FB !important;
+    svg{
+      transform: scale(1.8);
+    }
+  }
+  .ant-layout >div{
+    border-radius: 20px;
+  }
+  .ant-menu-light.ant-menu-root.ant-menu-inline{
+    border-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 5%,#E0E0E0 50%, rgba(255,255,255,0.00) 95%) 2 2 1 1;
+  }
+  .ant-menu-inline-collapsed >.ant-menu-item .ant-menu-title-content{
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+  }
+  .ant-menu-inline-collapsed >.ant-menu-item .ant-menu-title-content div{
+    opacity: 0 !important;
+  }
+}
+
+.childApp {
+  position: fixed;
+  right: 0;
+  top: 120px;
+  z-index: 999;
+}
+
+.tooltipContainer {
+  position: absolute;
+}
+
+.switchText {
+  cursor: pointer;
+  color: #0a6cff;
+  margin-left: 8px;
+}

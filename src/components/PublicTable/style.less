@@ -1,0 +1,126 @@
+.component_content {
+  width: 100%;
+  height: 80%;
+  .tableComponent {
+    width: 100%;
+    height: 100%;
+    .headerLeft {
+      display: flex;
+      flex-direction: row;
+    }
+    .addBtn{
+      border-radius: 20px;
+      background:linear-gradient(90deg, #5A1FE8 16.4%, #193BE3 100%);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      &:hover{
+        background: linear-gradient(90deg, #7440F2 16.4%, #3153FE 100%);
+        box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.60) inset;
+        border-color: transparent;
+      }
+    }
+    :global {
+      .ant-pro-card{
+        background-color: transparent;
+      }
+      .ant-table-wrapper .ant-table{
+        background: transparent;
+      }
+      .ant-table-wrapper .ant-table .ant-table-header{
+        margin-bottom: 12px;
+        border-radius: 12px;
+      }
+      .ant-table-thead>tr>th{
+        padding: 16px !important;
+        background: #F3F5FB;
+        right: 0 !important;
+      }
+      .ant-table-wrapper .ant-table-container table>thead>tr:first-child >*:last-child{
+        background: #F3F5FB;
+        border-left: none;
+      }
+      .ant-table-wrapper .ant-table-cell-scrollbar:not([rowspan]){
+        box-shadow: none;
+      }
+      .ant-table-wrapper .ant-table-thead >tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+        background-color: rgba(0,0,0,0.06)
+      }
+      .ant-table-cell-fix-right-first::before{
+        background-color: transparent !important;
+      }
+      .ant-table-body {
+        max-height: calc(100vh - 415px) !important;
+        background-color: #F9F9F9;
+        border-radius: 12px;
+        overflow: auto !important;
+      }
+      .ant-pro-card .ant-pro-card-body {
+        padding-inline: 0;
+      }
+      .ant-pro-table-list-toolbar{
+        margin-bottom: 30px;
+      }
+      .ant-pro-table-list-toolbar-container{
+        justify-content: flex-end;
+        padding: 0;
+      }
+      //.ant-pro-table, .ant-pro-card, .ant-table-wrapper, .ant-table{
+      //  height: 80% !important;
+      //}
+
+    }
+  }
+  .deleteModalStyle {
+    :global {
+      .anticon-warning {
+        color: darkorange;
+        margin-right: 10px;
+      }
+      .ant-modal-body {
+        display: flex;
+        align-items: center;
+        svg {
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+:global {
+  .ant-btn {
+    border-radius: 4px;
+  }
+  //.ant-modal-title {
+  //  padding-left: 10px;
+  //  border-left: 4px solid #1890ff;
+  //  color: #313131;
+  //}
+  .ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+    margin-left: 10px;
+  }
+  .ant-modal-body {
+    padding:0 4px;
+  }
+  .ant-modal-footer {
+    padding: 16px 20px 20px 16px;
+  }
+  .ant-modal-header {
+    padding: 10px 0px 20px 0px;
+  }
+  .ant-table-cell-content,
+  .ant-pro-table-alert-info-content {
+    // 列表的字段长度过长样式问题--此处代码导致失效，暂时屏蔽
+    //display: inline-block !important;
+  }
+  .ant-pro-table-alert-info-option {
+    float: right;
+  }
+  .ant-pro-table-list-toolbar-left{
+    width: auto;
+  }
+}

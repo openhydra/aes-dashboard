@@ -1,0 +1,83 @@
+.openDevice{
+  .title{
+    color:#1D1D43;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  .subTitle{
+    color: #878789;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: -14px;
+    margin-bottom: 16px;
+  }
+
+  .boxRadio{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    :global{
+      .ant-radio-wrapper span.ant-radio+*{
+        padding-inline-start: 0px;
+        padding-inline-end: 8px;
+        width: 100%;
+      }
+      .ant-radio-button-wrapper{
+        min-height: 50px;
+        padding: 10px 10px 10px 40px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .ant-radio-wrapper{
+        position: relative;
+        width: 100%;
+      }
+      .ant-radio-wrapper .ant-radio{
+        position: absolute;
+        left: 20px;
+        top: 18px;
+        z-index: 99;
+      }
+      .ant-radio-button-wrapper span{
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      .ant-radio-button-wrapper div{
+        color: #878789;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      .ant-radio-button-wrapper-checked{
+        background: #F3F1F8;
+      }
+    }
+  }
+  .bigRadio{
+    :global{
+      .ant-radio-button-wrapper{
+        height: 100px;
+      }
+    }
+  }
+
+}
+.device{
+  height: 100%;
+  overflow: auto;
+  :global{
+    .ant-table-body{
+      height: calc(100vh - 540px) !important;
+    }
+  }
+}
+

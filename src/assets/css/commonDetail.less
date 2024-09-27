@@ -1,0 +1,162 @@
+/*公用的详情样式*/
+.commonDetail {
+  width: 100%;
+  height: 100%;
+
+  :global {
+    .ant-divider-horizontal {
+      margin: 10px 0 20px 0 !important;
+    }
+  }
+
+  .commonDetailTitle {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bolder;
+    border-left: 5px solid #0d51c9;
+    padding-left: 8px;
+    height: 20px;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+
+  .detailBox {
+    margin-bottom: 24px;
+  }
+  .detailKey {
+    color: #999999;
+    text-align: right;
+    // display: inline-block;
+    // width: 33%;
+    // margin-right: 10px;
+  }
+
+  .detailVal {
+    // width: 60%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // display: -webkit-box;
+    // padding-right: 8px;
+    color: #333333;
+    word-break: break-all;
+
+    img {
+      height: 16px;
+      margin-right: 5px;
+    }
+  }
+
+  .commonDetailContent {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    > div {
+      width: 50%;
+      min-height: 30px;
+      padding-right: 10px;
+      font-size: 14px;
+      margin: 2px 0 2px 0;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      display: flex;
+      justify-content: flex-start;
+      line-height: 30px;
+
+      > span:nth-child(1) {
+        color: #999999;
+        display: inline-block;
+        width: 33%;
+        margin-right: 10px;
+      }
+      > span:nth-child(2) {
+        width: 60%;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        padding-right: 8px;
+        word-break: break-all;
+        color: #333333;
+
+        img {
+          height: 16px;
+          margin-right: 5px;
+        }
+      }
+      :global {
+        .ant-col-7,
+        .ant-form-item-label label {
+          color: #999999;
+          font-size: 14px !important;
+        }
+        .ant-form-item {
+          width: 100%;
+          min-height: 30px;
+          padding-right: 10px;
+          font-size: 14px;
+          margin: 2px 0 2px 0;
+          text-overflow: ellipsis;
+          word-break: break-all;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        .ant-form-item-row {
+          width: 100%;
+        }
+      }
+
+      //>div{
+      //  width:100%;
+      //}
+      //
+      //:global{
+
+      //  .ant-form-item-label{
+      //    color:#333333;
+      //
+      //  }
+      //}
+
+      .editIcon {
+        font-size: 17px;
+        color: #1677ff;
+        cursor: pointer;
+      }
+
+      .noEditIcon {
+        font-size: 17px;
+        color: #aaa;
+        cursor: not-allowed;
+      }
+
+      .editSave {
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .cancel {
+          cursor: pointer;
+        }
+
+        .save {
+          color: #1677ff;
+          cursor: pointer;
+        }
+      }
+    }
+
+    > div.Row:nth-child(4n + 4) {
+      //   padding-right: 0;
+    }
+  }
+}
+.bigName {
+  width: 100% !important;
+  font-weight: bold;
+  font-size: 18px;
+}

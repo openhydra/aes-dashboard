@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6", // 目标代码语言
+    "lib": ["ES6", "dom"], //指定要包含在编译中的library
+    "allowJs": false, // 允许ts编译js文件
+    "jsx": "react",
+    "skipLibCheck": true, // 跳过声明文件的类型检查
+    "module": "esNext", //生成代码的模块化标准
+    "moduleResolution": "node", // 模块解析策略
+    "checkJs": false, //报告js文件中的错误
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "esModuleInterop": true, // es 模块互操作，屏蔽ESModule和CommonJS之间的差异
+    "allowSyntheticDefaultImports": true, // 允许通过import x from y 即时模块没有显式指定default导出
+    "strict": true, //严格模式
+    "forceConsistentCasingInFileNames": true, // 文件名区分大小写
+    //    "noEmit": true, // 编译时不产生其他文件
+    "resolveJsonModule": true, //允许导入扩展名为.json的模块
+    "noFallthroughCasesInSwitch": true, // switch 语句启用错误报告
+    "noImplicitAny": false, // noImplicitAny的值为true或false，如果我们没有为一些值设置明确的类型，编译器会默认认为这个值为any，如果noImplicitAny的值为true的话。则没有明确的类型会报错。默认值为false
+    "noImplicitThis": false
+  },
+  "include": ["src/**/*", "typed-css.d.ts", "typed-global.d.ts"],
+  "exclude": ["node_modules", "build", "src/utils"] // *** 不进行类型检查的文件 ***
+}

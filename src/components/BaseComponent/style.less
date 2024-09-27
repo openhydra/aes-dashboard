@@ -1,0 +1,78 @@
+
+/*主体内容的顶部样式*/
+.contentHeader {
+  width: 100%;
+  background: transparent;
+  margin-bottom: 20px;
+  position: relative;
+  //margin-top: -50px;
+  height: 70px;
+  .mainTitle {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  h2{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0;
+  }
+  .back{
+    background: linear-gradient(0deg, #3923da 10%, #8a2be2 40%, #5B46F6 60%,  #a69cef 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //color: #878789;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    //padding: 20px 0;
+    display: inline-block;
+    width: auto;
+    transform: scale(1);
+    transition: 0.3s;
+    position: absolute;
+    margin-top: -35px;
+    .svg {
+      font-size: 18px;
+      margin-right: 6px;
+      color: #8a2be2;
+      //animation: arrow 0.5s infinite alternate;
+      position: absolute;
+      left: 0;
+      margin-top: 2px;
+    }
+    >span:nth-child(2){
+      margin-left: 20px;
+      display: flex;
+    }
+    &:hover{
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
+  }
+  .description{
+    color: #878789;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 14px;
+    display: block;
+  }
+}
+@keyframes arrow {
+  0%{
+    left:0;
+  }
+  //50%{
+  //  left:10px;
+  //}
+  100%{
+    left:10px;
+  }
+}

@@ -1,0 +1,104 @@
+.content{
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 20px;
+  overflow: auto;
+  height: 100%;
+  min-width: 1120px;
+  >div{
+    width: 100%;
+    border-radius: 20px;
+    background:  #FBFBFB;
+    padding: 20px;
+    &:nth-child(3), &:nth-child(4){
+      min-height: 140px;
+    }
+    .header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      .title{
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+      }
+      .options{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+    .version{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .left{
+        width: 55%;
+        >div{
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+          span:nth-child(1){
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+          }
+          span:nth-child(2){
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            display: block;
+            width: 60%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+
+      }
+      .right{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        img{
+          width: 75%;
+        }
+        >div{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color:  #5B5B5B;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  :global{
+    .ant-flex{
+      gap: 9px !important;
+    }
+    .ant-tag{
+      padding: 4px 8px;
+      border-radius: 12px;
+      border: 1px solid  #D9D9D9;
+      background:#F3F1F8;
+      color: #6750A4;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+}

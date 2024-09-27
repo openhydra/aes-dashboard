@@ -1,0 +1,40 @@
+.ellipse() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ellipse {
+  .ellipse();
+}
+
+.name .copy,
+.id .copy {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding-right: 16px;
+  margin-bottom: 0;
+
+  .ellipse();
+
+  :global {
+    .ant-typography-copy {
+      position: absolute;
+      right: 0;
+
+      .anticon-copy {
+        width: 12px;
+        color: rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+.name,
+.id {
+  .ellipse();
+  .tip {
+    cursor: pointer;
+  }
+}
