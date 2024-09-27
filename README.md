@@ -1,4 +1,6 @@
-###  AI 教培一体机   项目详细
+# aes-dashboard
+
+aes-dashboard 项目是一个基于React的前端项目，主要用于展示数据 openhydra-2.0 版本的前端界面，她/他会和 core-api 直接通讯来展示数据
 
 ## 环境依赖
 
