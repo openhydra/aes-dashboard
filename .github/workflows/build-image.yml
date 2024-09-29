@@ -51,6 +51,8 @@ jobs:
              tag=latest
           elif [[ "${{ steps.extract_tag.outputs.version }}" == v* ]]; then
             tag="${{ steps.extract_tag.outputs.version }}"
+          else
+            tag="${{ steps.extract_branch.outputs.branch }}"
           fi
 
           echo extract_tag   ${{ steps.extract_tag.outputs.version }}
