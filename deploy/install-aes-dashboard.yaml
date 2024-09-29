@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: aes-dashboard
-          image: registry.cn-shanghai.aliyuncs.com/aes/aes-dashboard:master
+          image: registry.cn-shanghai.aliyuncs.com/aes/aes-dashboard:latest
           ports:
             - containerPort: 80
 ---
