@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: aes-dashboard
-          image: registry.cn-shanghai.aliyuncs.com/openhydra/aes-dashboard:latest
+          image: registry.cn-shanghai.aliyuncs.com/openhydra/aes-dashboard:release-2.0
           ports:
             - containerPort: 80
 ---
