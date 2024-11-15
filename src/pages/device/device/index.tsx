@@ -262,7 +262,7 @@ const Device: React.FC = () => {
             <Radio.Button value={0}>
               CPU 实验室
               <div>
-                加速训练，适合大规模数据集和复杂模型。
+               资源受限时可选，训练速度较慢但成本较低。
               </div>
             </Radio.Button>
           </Radio>
@@ -270,7 +270,7 @@ const Device: React.FC = () => {
             <Radio.Button value={1}>
               GPU 实验室
               <div>
-                资源受限时可选，训练速度较慢但成本较低。
+                加速训练，适合大规模数据集和复杂模型。
               </div>
             </Radio.Button>
           </Radio>
